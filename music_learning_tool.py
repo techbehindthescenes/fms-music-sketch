@@ -1,5 +1,13 @@
 #!/usr/bin/python
+#
+# This script reads from a joystick and 4x4 touchpad-
+# then plays music files depending on the physical inputs.
+# This is a work in progress! 
+# Use at your own risk.
+#
 #--------------------------------------   
+# Credit for the Joystick input code:
+# 
 # This script reads data from a 
 # MCP3008 ADC device using the SPI bus.
 #
@@ -48,7 +56,7 @@ keypad = factory.create_keypad(keypad=KEYPAD, row_pins=ROW_PINS, col_pins=COL_PI
 def processKey(key):
   if (key=="1"):
     print("number 1")
-  else
+  else:
     print(key)
 
 # PyGame Audio Mixer setup - load in all music files
