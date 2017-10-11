@@ -1,23 +1,13 @@
 #!/usr/bin/python
 #
-# This script reads from a joystick and 4x4 touchpad-
-# then plays music files depending on the physical inputs.
+# This script plays music files based on movement of a 2-axis analog joystick.
+# The script uses pygame to play the music files. 
 # This is a work in progress! 
-# Use at your own risk.
+# Use at your own risk. There is a known issue of a slight delay between the joystick movement and sound start.
+# Original plan was to hookup a 4x4 keypad to control different sets of chords. This is not currently working.
 #
 #--------------------------------------   
-# Credit for the Joystick input code:
-# 
-# This script reads data from a 
-# MCP3008 ADC device using the SPI bus.
-#
-# Analogue joystick version!
-#
-# Author : Matt Hawkins
-# Date   : 17/04/2014
-#
-# http://www.raspberrypi-spy.co.uk/
-#
+# Credit for the Joystick input code: Matt Hawkins, 17/04/2014 from http://www.raspberrypi-spy.co.uk/
 #--------------------------------------
 
 import spidev
